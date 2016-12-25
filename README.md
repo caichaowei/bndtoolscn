@@ -1,2 +1,2 @@
 # bndtoolscn
-Chinese information of bndtools
+bndtools的中文信息
