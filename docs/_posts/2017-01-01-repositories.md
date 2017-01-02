@@ -144,13 +144,15 @@ Note 2: 默认产生的R5格式的索引不会带有空格和缩进字符，而�
 |**名称**|**描述**|**是否必须（Required）？**|
 |---|---|---|
 |name|仓库名称|No。|
-|root|Maven仓库所在的位置|NO。默认值：$HOME/.m2/repository|
+|root|Maven仓库所在的位置|No。默认值：$HOME/.m2/repository|
 
 注意如果你使用了支持Maven的Bundle插件，则也可以使用OBR仓库类型，因为Bundle插件会在**maven install**命令执行时生成一个OBR索引文件。例如：
 
-aQute.bnd.deployer.repository.FixedIndexedRepo;\
-  locations='file:${user.home}/.m2/repository/repository.xml';\
-  name='Maven Repo'
+    aQute.bnd.deployer.repository.FixedIndexedRepo;\
+    locations='file:${user.home}/.m2/repository/repository.xml';\
+    name='Maven Repo'
+
+
 
 <span id="42"/>
 
@@ -160,7 +162,7 @@ aQute.bnd.deployer.repository.FixedIndexedRepo;\
 不过如果你知道Group ID和Artifact ID，仍然可以通过**-buildpath**或**-runbundles**来引用仓库中的JAR包。
 例如如果要引用group ID为org.osgi，同时artifact ID为osgi_R4_core的JAR包，可以使用下面的语法：
 
-  -buildpath: org.osgi+osgi_R4_core
+    -buildpath: org.osgi+osgi_R4_core
 
 |**名称**|**描述**|**是否必须（Required）？**|
 |---|---|---|
