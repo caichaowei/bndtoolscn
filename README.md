@@ -1,6 +1,6 @@
 # bndtoolscn
 
-本项目的目的在于提供Bndtools的中文信息
+本项目提供Bndtools的中文信息
 
 Bndtools是一个用于编写OSGi Bundle的Eclipse插件，它受到了OSGi联盟的官方教程推荐。
 
